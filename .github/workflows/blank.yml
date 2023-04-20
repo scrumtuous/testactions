@@ -43,6 +43,7 @@ jobs:
           sudo gem install asciidoctor-pdf --pre
           asciidoctor-pdf --version
           ls
+          asciidoctor-pdf -a README.adoc -o readme.pdf
           
           
 
