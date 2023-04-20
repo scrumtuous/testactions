@@ -43,7 +43,7 @@ jobs:
           sudo gem install asciidoctor-pdf --pre
           asciidoctor-pdf --version
           ls
-          asciidoctor-pdf README.adoc -o readme.pdf
+          asciidoctor-pdf readme.adoc -o readme.pdf
           echo "Hello" > hello.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
