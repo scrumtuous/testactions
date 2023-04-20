@@ -38,9 +38,9 @@ jobs:
         run: |
           git checkout HEAD^
           ls
-          apt-get update
-          apt-get install ruby
-          gem install asciidoctor-pdf --pre
+          sudo apt-get update
+          sudo apt-get install ruby
+          sudo gem install asciidoctor-pdf --pre
           asciidoctor-pdf --version
           ls
           
