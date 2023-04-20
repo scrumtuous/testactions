@@ -36,7 +36,6 @@ jobs:
 
       - name: step 4 - 
         run: |
-          git checkout HEAD^
           ls
           sudo gem install asciidoctor-pdf --pre
           asciidoctor-pdf --version
