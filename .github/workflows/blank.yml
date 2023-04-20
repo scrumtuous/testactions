@@ -38,8 +38,6 @@ jobs:
         run: |
           git checkout HEAD^
           ls
-          sudo apt-get update
-          sudo apt-get install ruby
           sudo gem install asciidoctor-pdf --pre
           asciidoctor-pdf --version
           ls
