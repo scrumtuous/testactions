@@ -27,18 +27,18 @@ jobs:
         with: 
           name: assets-for-download
           path: downloads
-
+          
       - name: Step 3 - Use the Upload Artifact GitHub Action
-        - uses: actions/checkout@v3
-       with:
-         fetch-depth: 2
-        - run: |
-            git checkout HEAD^
-            ls
-            apt-get update
-            apt-get install ruby
-            gem install asciidoctor-pdf --pre
-            asciidoctor-pdf --version
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+        run: |
+          git checkout HEAD^
+          ls
+          apt-get update
+          apt-get install ruby
+          gem install asciidoctor-pdf --pre
+          asciidoctor-pdf --version
             
             
         
